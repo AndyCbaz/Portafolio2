@@ -13,7 +13,7 @@
     box-sizing: border-box;
 }
 
-@media (max-width: 768px ){
+@media (min-width: 320px ){
     .section1{
         background: var(--mor1);
         padding: 0 0 80px 0;   
@@ -494,39 +494,98 @@
         font-family: 'Inter', sans-serif;
         word-spacing: 3px;
     }
+}
+/* RESPONSIVE PARA DESKTOP */
+@media (min-width: 992px ){
+        .section1{
+        background: var(--mor1);
+        padding: 0 0 80px 0;   
+    }
 
+    .section1 .vector{
+        position: absolute;
+        z-index: 0;
+        right: 0;
+        width: 310px;
+    }
+    .section1 .elements{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 1;
+    }
+        /* ESTILO DEL MENU //////////////////////// */
 
-
-
-
-
-
-/* solo para ver bordes///////////////////////////// */
-    /* .section1 .elements nav{
-        border: solid 1px var(--white);}
+        /* //////////////////////////////////////// */
+        /* ESTILO DEL HEADER ////////////////// */
     .section1 .elements header{
-        border: solid 1px var(--white);}
-    .section1 .elements header article div:first-child{
-        border: solid 1px var(--white);}
-    .section1 .elements header article div:nth-child(2){
-        border: solid 1px var(--white);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
-    .section1 .elements header .icons_social{
-        border: solid 1px var(--white);
-    }
-    .section1 .elements header article div:nth-child(2) p{
-        border: solid 1px var(--white);
-    }
-    .section1 .elements header article div:nth-child(3) p{
-        border: solid 1px var(--white);
-    } */
-
-    /* .section1 .elements header .photo{
+        /* //////////////////////////////////////// */
+        /* ESTILO DEL TEXTO DEL HEADER //////////// */
+    .section1 .elements header .header_desktop{
+        display: flex;
+        flex-direction: column;
         border: solid 1px var(--gray);
-    } */
-
-
-/* ///////////////////////////// */
+    }
+        /* TITULO ///////////// */
+    .section1 .elements header article div:first-child{
+        color: var(--white);
+        text-align: start;
+            
+        font-size: 50px;
+        font-family: 'Inter', sans-serif;
+    }
+        /* SUBTITULO */
+    .section1 .elements header article div:nth-child(2){
+        color: var(--gray);
+        text-align: start;
+        font-family: 'Inter', sans-serif;
+        font-size: 22px;
+        padding: 25px 0 0 100px;
+    }
+        /* AÑOS DE EXPERIENCIA */
+    .section1 .elements header article div:nth-child(3){
+        color: var(--white);
+        font-family: 'Inter', sans-serif;
+        font-size: 22px;
+        padding: 10px 0 0 100px;
+    }
+    .section1 .elements header article div:nth-child(3) p span{
+        color: var(--yellow);
+    }
+        /* //////////////////////////////////////// */
+        /* ICONOS DEL HEADER */
+    .section1 .elements header .icons_social{
+        color: var(--yellow);
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+        gap: 25px;
+    }
+    .section1 .elements header .icons_social button{
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        /* transition: 0.5s; */
+    }
+    .section1 .elements header .icons_social button i{
+        color: #F1A600;
+        font-size: 30px;
+    }
+    
+        /* FOTO DEL PORTAFOLIO */
+    .section1 .elements header .photo{
+        text-align: center;
+    }
+    .section1 .elements header .photo .foto_mobile{
+        display: none;
+    }
+    .section1 .elements header .photo .foto_desktop{
+         width: 300px;
+    }
 }
 
 
