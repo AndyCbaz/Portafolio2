@@ -108,10 +108,14 @@
     .section1 .elements header .photo{
         text-align: center;
     }
+    .section1 .elements header
     /* SECTION 2 ESTILO ////////////// */
     .section2{
         background: var(--mor2);
         
+    }
+    .section1 .elements header .photo .foto_desktop{
+        display: none;
     }
     /* ///////////////////////// */
     
@@ -497,31 +501,14 @@
 }
 /* RESPONSIVE PARA DESKTOP */
 @media (min-width: 992px ){
-        .section1{
-        background: var(--mor1);
-        padding: 0 0 80px 0;   
-    }
 
-    .section1 .vector{
-        position: absolute;
-        z-index: 0;
-        right: 0;
-        width: 310px;
-    }
-    .section1 .elements{
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        z-index: 1;
-    }
         /* ESTILO DEL MENU //////////////////////// */
 
         /* //////////////////////////////////////// */
         /* ESTILO DEL HEADER ////////////////// */
     .section1 .elements header{
-        display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-start;
     }
         /* //////////////////////////////////////// */
         /* ESTILO DEL TEXTO DEL HEADER //////////// */
@@ -529,64 +516,49 @@
         display: flex;
         flex-direction: column;
         border: solid 1px var(--gray);
+        padding: 10px 30px 0 90px;
+    }
+    header{
+        border: solid 1px var(--gray);
     }
         /* TITULO ///////////// */
     .section1 .elements header article div:first-child{
-        color: var(--white);
-        text-align: start;
-            
-        font-size: 50px;
-        font-family: 'Inter', sans-serif;
+        padding: 0 0 30px 0;
     }
         /* SUBTITULO */
     .section1 .elements header article div:nth-child(2){
-        color: var(--gray);
-        text-align: start;
-        font-family: 'Inter', sans-serif;
-        font-size: 22px;
-        padding: 25px 0 0 100px;
+        padding:30px 0 30px 0;
     }
         /* AÑOS DE EXPERIENCIA */
     .section1 .elements header article div:nth-child(3){
-        color: var(--white);
-        font-family: 'Inter', sans-serif;
-        font-size: 22px;
-        padding: 10px 0 0 100px;
+        padding: 0;
     }
-    .section1 .elements header article div:nth-child(3) p span{
-        color: var(--yellow);
-    }
+    .section1 .elements header article 
         /* //////////////////////////////////////// */
         /* ICONOS DEL HEADER */
     .section1 .elements header .icons_social{
-        color: var(--yellow);
-        display: flex;
-        justify-content: center;
-        padding: 30px;
-        gap: 25px;
+
     }
     .section1 .elements header .icons_social button{
-        border: none;
-        background-color: transparent;
-        cursor: pointer;
-        /* transition: 0.5s; */
+
     }
     .section1 .elements header .icons_social button i{
-        color: #F1A600;
-        font-size: 30px;
+
     }
     
         /* FOTO DEL PORTAFOLIO */
     .section1 .elements header .photo{
         text-align: center;
-    }
+        border: solid 1px var(--gray);
+    }Andycbaz25
     .section1 .elements header .photo .foto_mobile{
         display: none;
     }
     .section1 .elements header .photo .foto_desktop{
-         width: 300px;
+        display: block; 
+        width: 390px;
+        /* padding: 0 0 0 50px; */
     }
+    .section1 .elements header {
 }
-
-
-
+}
