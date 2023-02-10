@@ -1,0 +1,361 @@
+:root{
+    --yellow: #F1A600;
+    --mor1: #1F1D2C;
+    --mor2: #242635;
+    --gray: #E5E5E5;
+    --white: #FFFFFF;
+}
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Inter', sans-serif; */
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px ){
+    .section1{
+        background: var(--mor1);
+        padding: 0 0 80px 0;   
+    }
+    .section1 .vector{
+        position: absolute;
+        z-index: 0;
+        right: 0;
+        width: 310px;
+    }
+    .section1 .elements{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 1;
+    }
+    /* ESTILO DEL MENU //////////////////////// */
+    .section1 .elements nav{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .section1 .elements nav button{
+        border: none;
+        background-color: transparent;
+        padding: 30px 50px 0 0;   
+    }
+    .section1 nav button i{
+        color: var(--white);
+        font-size: 30px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    .section1 nav button i:hover{
+        rotate: 180deg;
+    }
+    /* //////////////////////////////////////// */
+    /* ESTILO DEL HEADER ////////////////// */
+    .section1 .elements header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    /* //////////////////////////////////////// */
+    /* ESTILO DEL TEXTO DEL HEADER //////////// */
+    
+    /* TITULO ///////////// */
+    .section1 .elements header article div:first-child{
+        color: var(--white);
+        text-align: center;
+        font-size: 50px;
+        font-family: 'Inter', sans-serif;
+    }
+    /* SUBTITULO */
+    .section1 .elements header article div:nth-child(2){
+        color: var(--gray);
+        text-align: start;
+        font-family: 'Inter', sans-serif;
+        font-size: 22px;
+        padding: 25px 0 0 100px;
+    }
+    /* AÑOS DE EXPERIENCIA */
+    .section1 .elements header article div:nth-child(3){
+        color: var(--white);
+        font-family: 'Inter', sans-serif;
+        font-size: 22px;
+        padding: 10px 0 0 100px;
+    }
+    .section1 .elements header article div:nth-child(3) p span{
+        color: var(--yellow);
+    }
+    /* //////////////////////////////////////// */
+    /* ICONOS DEL HEADER */
+    .section1 .elements header .icons_social{
+        color: var(--yellow);
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+        gap: 25px;
+    }
+    .section1 .elements header .icons_social button{
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    .section1 .elements header .icons_social button i{
+        color: #F1A600;
+        font-size: 30px;
+    }
+
+    /* FOTO DEL PORTAFOLIO */
+    .section1 .elements header .photo{
+        text-align: center;
+    }
+    /* SECTION 2 ESTILO ////////////// */
+    .section2{
+        background: var(--mor2);
+        
+    }
+    /* ///////////////////////// */
+    
+    /* SECTION 2 ARTICULO ////////////// */
+    main{
+        display:flex;
+        flex-direction: column;
+    }
+    main .section2{
+        display: flex;
+        flex-direction: column;
+        background: var(--mor2);
+    }
+    main .section2 article{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    main .section2 article div:first-child{
+        text-align: center;
+        color: var(--white);
+        font-family: 'Inter', sans-serif;
+        padding: 40px 0 20px 0;
+        font-size: 24px;
+    }
+    main .section2 article div:last-child{
+        text-align: center;
+        color: var(--gray);
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    /* ESTILOS DE LOGOS */
+    
+     main .logos{
+        display: flex;
+        flex-direction: column;
+     }
+     /* Logo de UVM */
+     main .section2 .logos .UVM_logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+     }
+     main .section2 .logos .UVM_logo div:nth-child(1){
+        text-align: center;
+        padding: 60px 0 0 0;
+        margin: 0;
+        
+     }
+     main .section2 .logos .UVM_logo div:nth-child(1) img{
+        height: 70px;
+     }
+
+     main .section2 .logos .UVM_logo div:nth-child(2){
+        text-align: center;
+        color: var(--white);
+        font-family: 'Inter', sans-serif;
+     }
+     main .section2 .logos .UVM_logo div:nth-child(3){
+        text-align: center;
+        padding: 0 0 60px 0;
+        color: var(--white);
+        font-family: 'Inter', sans-serif;
+        font-size: 12px;
+     }
+    /* ///////////////////////// */
+     main .section2 .logos .Academlo_logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+     }
+     main .section2 .logos .Academlo_logo div:nth-child(1){
+        text-align: center;
+        margin: 0;
+     }
+     main .section2 .logos .Academlo_logo div:nth-child(1) img{
+        height: 80px;
+        background-color: transparent;
+     }
+
+     main .section2 .logos .Academlo_logo div:nth-child(2){
+        text-align: center;
+        color: var(--white);
+        font-family: 'Inter', sans-serif;
+     }
+     main .section2 .logos .Academlo_logo div:nth-child(3){
+        text-align: center;
+        color: var(--white);
+        font-family: 'Inter', sans-serif;
+        font-size: 12px;
+        padding: 0 0 60px 0;
+     }
+
+    /* ///////////////////////// */
+     main .section3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: var(--mor1);
+        padding: 0 0 50px 0;
+     }
+     /* Seccion 3 titulo experiencia */
+     main .section3 .exp_title{
+        text-align: center;
+        color: var(--white);
+        font-family: 'Inter', sans-serif;
+        font-size: 28px;
+        padding: 60px 0 20px 0;
+     }
+     /* grid */
+     main .section3 .items div:nth-child(1){
+        color: var(--white);
+        font-size: 40px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+     main .section3 .items div:nth-child(2){
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        color: var(--white);
+        font-family: 'Inter', sans-serif;
+     }
+     main .section3 .items div:nth-child(2) article:nth-child(2){
+        font-size: 10px;
+     }
+     main .section3 .items div:nth-child(2) article:nth-child(3){
+        font-size: 10px;
+     }
+     main .section3 .items div:nth-child(3){
+        color: var(--white);
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+     
+     /* //////////////// */
+     main .section3 .items div:nth-child(4){
+        color: var(--white);
+        font-size: 40px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+     main .section3 .items div:nth-child(5){
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        color: var(--white);
+        font-family: 'Inter', sans-serif;
+     }
+     main .section3 .items div:nth-child(5) article:nth-child(2){
+        font-size: 10px;
+     }
+     main .section3 .items div:nth-child(5) article:nth-child(3){
+        font-size: 10px;
+     }
+     main .section3 .items div:nth-child(6){
+        color: var(--white);
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+     /* //////////////// */
+     main .section3 .items div:nth-child(7){
+        color: var(--white);
+        font-size: 40px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+     main .section3 .items div:nth-child(8){
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        color: var(--white);
+        font-family: 'Inter', sans-serif;
+     }
+     main .section3 .items div:nth-child(8) article:nth-child(2){
+        font-size: 10px;
+     }
+     main .section3 .items div:nth-child(8) article:nth-child(3){
+        font-size: 10px;
+     }
+     main .section3 .items div:nth-child(9){
+        color: var(--white);
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+
+     /* //////////////// */
+     main .section3 .items{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 40px;
+     }
+     /* ///////////////////////// */
+
+
+
+
+
+/* solo para ver bordes///////////////////////////// */
+    /* .section1 .elements nav{
+        border: solid 1px var(--white);}
+    .section1 .elements header{
+        border: solid 1px var(--white);}
+    .section1 .elements header article div:first-child{
+        border: solid 1px var(--white);}
+    .section1 .elements header article div:nth-child(2){
+        border: solid 1px var(--white);
+    }
+    .section1 .elements header .icons_social{
+        border: solid 1px var(--white);
+    }
+    .section1 .elements header article div:nth-child(2) p{
+        border: solid 1px var(--white);
+    }
+    .section1 .elements header article div:nth-child(3) p{
+        border: solid 1px var(--white);
+    } */
+
+    /* .section1 .elements header .photo{
+        border: solid 1px var(--gray);
+    } */
+
+
+/* ///////////////////////////// */
+}
+
+
+
