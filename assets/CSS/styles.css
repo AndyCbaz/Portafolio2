@@ -150,12 +150,15 @@
         padding: 40px 0 20px 0;
         font-size: 24px;
     }
-    main .section2 article div:last-child{
+    main .section2 article div:nth-child(2){
         text-align: center;
         color: var(--gray);
         font-family: 'Inter', sans-serif;
         font-size: 18px;
         line-height: 25px;
+    }
+    main .section2 article .desc_long{
+        display:none;
     }
     /* ESTILOS DE LOGOS */
     
@@ -348,6 +351,9 @@
         width: 310px;
         z-index: 0;
     }
+    main .section4 .vector2-desktop{
+        display: none;
+    }
     main .section4 div{
         position: relative;
         z-index: 1;
@@ -362,26 +368,33 @@
         font-size: 20px;
         padding: 30px 0 0 110px;
     }
+    .hab_br_3{
+        display: none;
+    }
+    .hab_br_1,.hab_br_2{
+        display: inline;
+    }
+
     main .section4 .text_section4 {
         display: flex;
         flex-direction: column;
         justify-content: center;
         
     }
-    main .section4 .text_section4 #t1{
+    main .section4 .text_section4 .t1{
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
         padding: 20px 0 20px 0;
     }
-    main .section4 .text_section4 #t1 h2{
+    main .section4 .text_section4 .t1 h2{
         color: var(--yellow);
         padding: 0 25px 0 25px;
         font-family: 'Inter', sans-serif;
         font-size: 30px;
     }
-    main .section4 .text_section4 #t1 h3{
+    main .section4 .text_section4 .t1 h3{
         color: var(--gray);
         padding: 0 25px 0 25px;
         font-family: 'Inter', sans-serif;
@@ -510,24 +523,27 @@
 }
 /* RESPONSIVE PARA DESKTOP */
 @media (min-width: 992px ){
-
+    
     .section1 .vector{
         width: 370px;
     }
         /* ESTILO DEL MENU //////////////////////// */
     .section1 .elements .nav_toogle{
         display: none;
+        
     }
     .section1 .elements .nav_links{
         display: grid;
         grid-template-columns: auto  auto auto auto auto auto;
         column-gap: 50px;
-        padding: 20px 0 20px 0;
+        padding: 20px 20px 20px 0;
+        transition: 0.5s;
     }
     .section1 .elements .nav_links a{
         text-decoration: none;
         color: var(--white);
         font-family: 'Inter', sans-serif;
+        transition: 0.5s;
     }
     .section1 .elements .nav_links a:hover{
         color: var(--yellow);
@@ -600,11 +616,133 @@
         /* border: solid 1px var(--gray); */
         padding: 30px 0 0 0;
     }
-    .first_br, .third_br{
+    .first_br, .third_br, .fourth_br{
         display: none;
     }
     .second_br, .fifth_br{
         display: inline;
     }
+
+    /* SECCION 2 ARTICULO DESKTOP */
+    main .section2 article div:nth-child(2){
+        display: none;
+    }
+    main .section2 article .desc_long{
+        display: flex;
+        justify-content: center;
+        color: var(--gray);
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        line-height: 25px;
+        /* border: solid 1px var(--gray); */
+    }
+    main .section2 article .desc_long p{
+    width: 770px;
+    text-align: center;
+    font-size: 16px;
+    
+    }
+
+    /* SECCION 2 lOGOS */
+    main .logos{
+        flex-direction: row;
+        align-self: center;
+        
+        gap: 300px;
+        /* border: solid 1px var(--gray); */
+        padding: 40px 0 40px 0;
+    }
+    main .section2 .logos .UVM_logo{
+        /* border: solid 1px var(--gray); */
+    }
+
+    main .section2 .logos .UVM_logo div:nth-child(1){
+        /* border: solid 1px var(--gray); */
+        padding: 0;
+    }
+    main .section2 .logos .UVM_logo div:nth-child(1) img{
+        height: 100px;
+    }
+    main .section2 .logos .UVM_logo div:nth-child(3){
+        padding: 0;
+    }
+
+    main .section2 .logos .Academlo_logo{
+        
+    }
+     main .section2 .logos .Academlo_logo div:nth-child(3){
+        padding: 10px 0 0 0;
+    }
+    main .section2 .logos .Academlo_logo div:nth-child(1) img{
+        height: 120px;
+        width: 110px;
+        /* border: solid 1px var(--gray); */
+    }
+    /* SECCION 3 EXPERIENCIA */
+    main .section3 .exp_title{
+        font-size: 56px;
+    }
+    main .section3 .items div:nth-child(1),main .section3 .items div:nth-child(4),main .section3 .items div:nth-child(7){
+        justify-content: flex-end;
+        font-size: 80px;
+    }
+    main .section3 .items div:nth-child(3),main .section3 .items div:nth-child(6),main .section3 .items div:nth-child(9){
+        justify-content: flex-start;
+        font-size: 30px;
+    }
+    main .section3 .items div:nth-child(2), main .section3 .items div:nth-child(5),main .section3 .items div:nth-child(8){
+        font-size: 28px;
+        text-align: start;
+        padding-left: 37%;
+    }
+    main .section3 .items div:nth-child(2) article:nth-child(3),     main .section3 .items div:nth-child(5) article:nth-child(3),     main .section3 .items div:nth-child(8) article:nth-child(3),     main .section3 .items div:nth-child(2) article:nth-child(2),     main .section3 .items div:nth-child(5) article:nth-child(2),     main .section3 .items div:nth-child(8) article:nth-child(2){
+        font-size: 20px;
+        text-align: start;
+    }
+    /* SECCION 4 HABILIDADES */
+
+    main .section4 .vector2{
+        display: none;
+    }
+    main .section4 .vector2-desktop{
+        display: block;
+        position: absolute;
+        z-index: 0;
+        left: 0;
+        width: 50%;
+        z-index: 0;
+    }
+    main .section4 .title_section4 {
+        /* border: solid 1px var(--gray); */
+        text-align: center;
+        font-size: 25px;
+        color: var(--gray);
+        padding-bottom: 40px;
+    }
+    main .section4 .title_section4 .hab_br_3{
+        display: inline;
+    }
+    .hab_br_1,.hab_br_2{
+        display: none;
+    }
+    .hab_br_3{
+        display: inline;
+    }
+    main .section4 .text_section4 #g2{
+        display: none;
+    }
+    main .section4 .text_section4 .t1{
+        padding: 10px 0 10px 20%;
+    }
+    main .section4 .text_section4 .t1 h2{
+        font-size: 55px;
+    }
+    main .section4 .text_section4 .t1 h3{
+        font-size: 20px;
+    }
+    .section4{
+        padding: 0 0 150px 0; 
+    }
+
 
 }
