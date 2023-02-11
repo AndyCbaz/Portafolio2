@@ -717,7 +717,7 @@
         text-align: center;
         font-size: 25px;
         color: var(--gray);
-        padding-bottom: 40px;
+        padding:30px 0 40px 0;
     }
     main .section4 .title_section4 .hab_br_3{
         display: inline;
@@ -740,8 +740,66 @@
     main .section4 .text_section4 .t1 h3{
         font-size: 20px;
     }
-    .section4{
-        padding: 0 0 150px 0; 
+    
+    /* SECCION 5 PORTAFOLIO */
+    main .section5 {
+        padding: 100px;
+    }
+    main .section5 .title_section5{
+        padding: 0 0 30px 0;
+        font-size: 25px;
+    }
+    main .section5 .portfolio_desktop{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    main .section5 .first_portfolio{
+        height: 320px;
+    }
+    main .section5 .first_portfolio img{
+        height: 350px;
+    }
+    main .section5 .second_portfolio{
+        height: 320px;
+    }
+    main .section5 .second_portfolio img{
+        height: 350px;
+    }
+    main .section5 .third_portfolio {
+        height: 320px;
+    }
+    main .section5 .third_portfolio img{
+        height: 350px;
+    }
+
+    /* SECCION FOOTER */
+    footer .icon_contacts{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 180px;
+    }
+    footer .cell_icon i{
+        font-size: 90px;
+    }
+    footer .email_icon i{
+        font-size: 90px;
+    }
+    footer h2{
+        font-size: 35px;
+    }
+    footer h3{
+        font-size: 25px;
+    }
+    footer p{
+        font-size: 18px;
+    }
+    footer .final_message{
+        background: var(--mor1);
+        padding: 50px 0 50px 0;
+    }
+    footer .final_message h4{
+        font-size: 15px;
     }
 
 
