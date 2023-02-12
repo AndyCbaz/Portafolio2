@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,33 +24,33 @@
                     <i class="fa-sharp fa-solid fa-bars"></i>
                 </button>
                 <div class="nav_links">
-                    <div class="home_link">
-                        <a href="#home">
+                    <div class="home_link nav_menu_item">
+                        <a href="#home" class="nav_menu_link nav_link">
                             Home
                         </a>
                     </div>
-                    <div class="about_link">
-                        <a href="#acerca">
+                    <div class="about_link nav_menu_item">
+                        <a href="#acerca" class="nav_menu_link nav_link">
                             Acerca de mí
                         </a>
                     </div>
-                    <div class="experience_link">
-                        <a href="#experiencia">
+                    <div class="experience_link nav_menu_item">
+                        <a href="#experiencia" class="nav_menu_link nav_link">
                             Experiencia
                         </a>
                     </div>
-                    <div class="hability_link">
-                        <a href="#habilidades">
+                    <div class="hability_link nav_menu_item">
+                        <a href="#habilidades" class="nav_menu_link nav_link">
                             Mis habilidades
                         </a>
                     </div>
-                    <div class="portolio_link">
-                        <a href="#portafolio">
+                    <div class="portolio_link nav_menu_item">
+                        <a href="#portafolio" class="nav_menu_link nav_link">
                             Mi portafolio
                         </a>
                     </div>
-                    <div class="contact_link">
-                        <a href="#contactos">
+                    <div class="contact_link nav_menu_item">
+                        <a href="#contactos" class="nav_menu_link nav_link nav_menu_link_active">
                             Contacto
                         </a>
                     </div>
@@ -79,18 +79,28 @@
     <main>
         <section class="section2">
             <article>
-                <div id="acerca"><h2>Acerca de mí</h2></div>
-                <div class="desc_short"><p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Modi est fugiat perferendis <br> laudantium. Ex non porro incidunt officiis nam <br> dolor molestias vero doloremque minima.</p></div>
-                <div class="desc_long"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolores eum quas quae officiis soluta vel vitae fugit modi neque eligendi, earum officia corporis recusandae odio totam atque magni quidem omnis a numquam repellat id aliquam? Suscipit neque, reiciendis nisi qui maxime voluptates tempora impedit nihil. Ducimus inventore facere officiis.</p></div>
+                <div id="acerca">
+                    <h2>Acerca de mí</h2>
+                </div>
+                <div class="desc_short">
+                    <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Modi est fugiat perferendis <br> laudantium. Ex non porro incidunt officiis nam <br> dolor molestias vero doloremque minima.</p>
+                </div>
+                <div class="desc_long">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolores eum quas quae officiis soluta vel vitae fugit modi neque eligendi, earum officia corporis recusandae odio totam atque magni quidem omnis a numquam repellat id aliquam? Suscipit neque, reiciendis nisi qui maxime voluptates tempora impedit nihil. Ducimus inventore facere officiis.</p>
+                </div>
             </article>
             <div class="logos">
                 <div class="UVM_logo">
-                    <div><img src="/assets/IMAGES/image 9.jpg" alt="UVM image"></div>
+                    <div>
+                        <img src="/assets/IMAGES/image 9.jpg" alt="UVM image">
+                    </div>
                     <div>UVM</div>
                     <div>2010-2014</div>
                 </div>
                 <div class="Academlo_logo">
-                    <div><img src="/assets/IMAGES/logo_academlo corregido.jpg.png" alt="Academlo image"></div>
+                    <div>
+                        <img src="/assets/IMAGES/logo_academlo corregido.jpg.png" alt="Academlo image">
+                    </div>
                     <div>Academlo</div>
                     <div>2020-2021</div>
                 </div>
@@ -101,7 +111,9 @@
                 <article>Experiencia</article>
             </div>
             <div class="items">
-                <div><i class="fa-brands fa-amazon"></i></div>
+                <div>
+                    <i class="fa-brands fa-amazon"></i>
+                </div>
                 <div>
                     <article>Amazon</article>
                     <article>UI Designer</article>
@@ -109,7 +121,9 @@
                 </div>
                 <div><article>2 años</article></div>
 
-                <div><i class="fa-brands fa-airbnb"></i></div>
+                <div>
+                    <i class="fa-brands fa-airbnb"></i>
+                </div>
                 <div>
                     <article>Airbnb</article>
                     <article>Senior UX/UI</article>
@@ -117,13 +131,17 @@
                 </div>
                 <div><article>1 años</article></div>
 
-                <div><i class="fa-brands fa-google"></i></div>
+                <div>
+                    <i class="fa-brands fa-google"></i>
+                </div>
                 <div>
                     <article>Google</article>
                     <article>Product Designer</article>
                     <article>2018-Actualidad</article>
                 </div>
-                <div><article>2 años</article></div>
+                <div>
+                    <article>2 años</article>
+                </div>
             </div>
         </section>
         <section class="section4" id="habilidades">
@@ -156,30 +174,54 @@
             </div>
         </section>
         <section class="section5" id="portafolio">
-            <div class="title_section5"><h2>Mi portafolio</h2></div>
+            <div class="title_section5">
+                <h2>Mi portafolio</h2>
+            </div>
             <div class="portfolio_desktop">
-                <div   div class="first_portfolio"><img src="/assets/IMAGES/image 9-1.jpg" alt="portafolio1"></div>
-                <div class="second_portfolio"><img src="/assets/IMAGES/image 10.jpg" alt="portafolio2"></div>
-                <div class="third_portfolio"><img src="/assets/IMAGES/image 11.jpg" alt="portafolio3"></div>
+                <div   div class="first_portfolio">
+                    <img src="/assets/IMAGES/image 9-1.jpg" alt="portafolio1">
+                </div>
+                <div class="second_portfolio">
+                    <img src="/assets/IMAGES/image 10.jpg" alt="portafolio2">
+                </div>
+                <div class="third_portfolio">
+                    <img src="/assets/IMAGES/image 11.jpg" alt="portafolio3">
+                </div>
             </div>
         </section>
     </main>
     <footer>
-        <div id="contactos"><h2>Contacto</h2></div>
+        <div id="contactos">
+            <h2>Contacto</h2>
+        </div>
         <div class="icon_contacts">
             <div>
-                <div class="cell_icon"><i class="fa-solid fa-phone"></i></div>
-                <div><h3>Número celular</h3></div>
-                <div><p>5526895424</p></div>
+                <div class="cell_icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <div>
+                    <h3>Número celular</h3>
+                </div>
+                <div>
+                    <p>5526895424</p>
+                </div>
             </div>
             <div>
-                <div class="email_icon"><i class="fa-sharp fa-solid fa-envelope"></i></div>
-                <div><h3>Email</h3></div>
-                <div><p>example@correo.com</p></div>
+                <div class="email_icon">
+                    <i class="fa-sharp fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                    <h3>Email</h3>
+                </div>
+                <div>
+                    <p>example@correo.com</p>
+                </div>
             </div>
         </div>
         <div class="final_message">
-            <div class="message"><h4>Hecho con <span><i class="fa-solid fa-heart"></i></span> en Academlo</h4></div>
+            <div class="message">
+                <h4>Hecho con <span><i class="fa-solid fa-heart"></i></span> en Academlo</h4>
+            </div>
         </div>
     </footer>
 </body>

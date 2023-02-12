@@ -49,8 +49,40 @@
     .section1 nav button i:hover{
         rotate: 180deg;
     }
+    /* Menu responsive */
     .section1 .elements .nav_links{
-        display: none;
+        /* display: none; */
+        flex-direction: column;
+        text-align: center;
+        margin-right: 40px;
+        background-color: var(--mor2);
+        position: fixed;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+        height: 100%;
+        overflow-y: auto;
+        left: 100%;
+        
+    }
+    .nav_menu_item{
+        line-height: 60px;
+    }
+    .nav_link{
+        color: var(--white);
+        font-family:'Inter', sans-serif;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .nav_menu_link:hover, .nav_menu_link_active{
+        color: var(--yellow)
+    }
+    .nav_toogle{
+        display: block;
+    }
+    .nav_menu_visible{
+        left: 0;
     }
     /* //////////////////////////////////////// */
     /* ESTILO DEL HEADER ////////////////// */
@@ -59,6 +91,7 @@
         flex-direction: column;
         justify-content: center;
     }
+ 
     /* //////////////////////////////////////// */
     /* ESTILO DEL TEXTO DEL HEADER //////////// */
     
@@ -339,6 +372,10 @@
         grid-template-columns: 1fr 1fr 1fr;
         row-gap: 40px;
      }
+     /* main .section4 .text_section4 #g2{
+        display: block;
+    } */
+
      /* ///////////////////////// */
      .section4{
         background: var(--mor1);
@@ -521,13 +558,8 @@
         word-spacing: 3px;
     }
 }
-/* RESPONSIVE PARA DESKTOP */
-@media (min-width: 992px ){
-    
-    .section1 .vector{
-        width: 370px;
-    }
-        /* ESTILO DEL MENU //////////////////////// */
+@media (min-width: 768px ){
+
     .section1 .elements .nav_toogle{
         display: none;
         
@@ -536,11 +568,16 @@
         display: grid;
         grid-template-columns: auto  auto auto auto auto auto;
         column-gap: 50px;
-        padding: 20px 20px 20px 0;
+        padding: 20px 0px 20px 100px;
         transition: 0.5s;
+        top: 0;
+        left: 0;
+        position: inherit;
+        background: inherit ;
     }
     .section1 .elements .nav_links a{
         text-decoration: none;
+        font-size: 11px;
         color: var(--white);
         font-family: 'Inter', sans-serif;
         transition: 0.5s;
@@ -548,9 +585,27 @@
     .section1 .elements .nav_links a:hover{
         color: var(--yellow);
     }
-    .section1 .elements .nav_links div{
-        /* border: solid 1px var(--gray); */
+
+}
+
+/* RESPONSIVE PARA DESKTOP */
+@media (min-width: 992px ){
+    
+    .section1 .vector{
+        width: 370px;
     }
+        /* ESTILO DEL MENU //////////////////////// */
+    .section1 .elements .nav_links{
+        padding: 20px 0px 20px 220px;
+    }
+    .section1 .elements .nav_links a{
+        text-decoration: none;
+        font-size: 15px;
+        color: var(--white);
+        font-family: 'Inter', sans-serif;
+        transition: 0.5s;
+    }
+
         /* //////////////////////////////////////// */
         /* ESTILO DEL HEADER ////////////////// */
     .section1 .elements header{
