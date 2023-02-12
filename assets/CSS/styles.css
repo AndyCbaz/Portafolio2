@@ -63,6 +63,8 @@
         height: 100%;
         overflow-y: auto;
         left: 100%;
+        transition: 0.3s;
+        
         
     }
     .nav_menu_item{
@@ -81,7 +83,7 @@
     .nav_toogle{
         display: block;
     }
-    .nav_menu_visible{
+    .section1 .elements .nav_menu_visible{
         left: 0;
     }
     /* //////////////////////////////////////// */
